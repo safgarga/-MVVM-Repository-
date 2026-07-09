@@ -26,18 +26,43 @@
 
 ---
 
-## 📂 项目结构
+```text
 Application/
-├── entry/ # 主业务模块
-│ └── src/main/ets/
-│ ├── entryability/ # 应用入口（EntryAbility）
-│ ├── model/ # 数据模型（User/Goods/Order/Message/Report）
-│ ├── pages/ # 业务页面（首页/详情页/聊天页/管理后台等）
-│ ├── components/ # 复用组件（GoodsCard/ServiceCard）
-│ └── utils/ # 工具类（StorageUtil/PermissionUtil）
-├── AppScope/ # 应用全局配置
-└── oh-package.json5 # 项目依赖配置
----
+├── entry/                          # 主业务模块
+│   └── src/main/ets/
+│       ├── entryability/
+│       │   └── EntryAbility.ets     # 应用入口
+│       ├── model/                   # 数据模型
+│       │   ├── User.ets
+│       │   ├── Goods.ets
+│       │   ├── Order.ets
+│       │   ├── Message.ets
+│       │   └── Report.ets
+│       ├── pages/                   # 业务页面
+│       │   ├── Index.ets            # 主框架 (Tab)
+│       │   ├── HomePage.ets
+│       │   ├── CategoryPage.ets
+│       │   ├── PublishPage.ets
+│       │   ├── DetailPage.ets
+│       │   ├── ChatPage.ets         # 聊天页
+│       │   ├── MessagePage.ets
+│       │   ├── OrderPage.ets
+│       │   ├── AdminPage.ets        # 管理后台
+│       │   ├── LoginPage.ets
+│       │   └── RegisterPage.ets
+│       ├── components/              # 复用组件
+│       │   ├── GoodsCard.ets
+│       │   └── ServiceCard.ets
+│       └── utils/                   # 工具类
+│           ├── StorageUtil.ets      # 本地存储 (ORM)
+│           └── PermissionUtil.ets   # 权限校验
+├── AppScope/                       # 全局配置
+├── cloud_objects/                  # 云对象预留
+├── screenshots/                    # 截图资源
+├── oh-package.json5                # 依赖配置
+├── build-profile.json5             # 构建配置
+└── hvigorfile.ts                   # 构建脚本
+```
 
 ## 🚀 运行说明
 1. 安装 [DevEco Studio](https://developer.huawei.com/consumer/cn/deveco-studio/) 和 HarmonyOS SDK
