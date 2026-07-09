@@ -105,8 +105,6 @@ MIT License
 
 ---
 
-## 📸 效果截图（可选）
-> 可将运行截图放入项目 `screenshots` 文件夹，按以下格式引用：
-> ![首页](screenshots/HomePage/Home.png)
+
 > ![聊天页](screenshots/ChatPage/Chat.png)
 > ![管理后台](screenshots/AdminPage/Admin.png)
