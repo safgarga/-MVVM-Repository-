@@ -1,0 +1,54 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\meng'xiang'jun\\.ohos\\config\\default_Application_45ctOMSP5vNFzj3zmEdvOcErL0SvP30ntrvafvWUsvo=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BD28020214B14C413F1348FAB28AC2ADE125AF8792CA8F0A58036DB158BB9C41A777567FE0B7207",
+          "profile": "C:\\Users\\meng'xiang'jun\\.ohos\\config\\default_Application_45ctOMSP5vNFzj3zmEdvOcErL0SvP30ntrvafvWUsvo=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\meng'xiang'jun\\.ohos\\config\\default_Application_45ctOMSP5vNFzj3zmEdvOcErL0SvP30ntrvafvWUsvo=.p12",
+          "storePassword": "0000001B953C621C3800E02A4FDF34CF190AF06895643FD68AC3BE79DA3E06E1FD5D0BB237E6163623C12D"
+        }
+      }
+    ],
+    // ✅ 清空，让DevEco自动生成签名，避开路径问题
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "bundleName": "com.mxj.campustrade",
+        // ✅ 改成普通应用包名，和AppScope里的一致
+        "targetSdkVersion": "6.1.1(24)",
+        "compatibleSdkVersion": "6.1.1(24)",
+        "runtimeOS": "HarmonyOS"
+        // ✅ 删掉这里的strictMode，移到hvigorfile.ts
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

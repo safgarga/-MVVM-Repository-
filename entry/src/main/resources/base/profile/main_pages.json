@@ -1,0 +1,17 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/LoginPage",
+    "pages/HomePage",
+    "pages/CategoryPage",
+    "pages/DetailPage",
+    "pages/PublishPage",
+    "pages/SearchResultPage",
+    "pages/RegisterPage",
+    "pages/MinePage",
+    "pages/ChatPage",
+    "pages/OrderPage",
+    "pages/MessagePage",
+    "pages/AdminPage"
+  ]
+}
